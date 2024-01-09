@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/font.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="theme-toggle">
+            <button id="dayButton"><img src="image/white-day.svg" alt=""></button>
+            <button id="nightButton"><img src="image/white-night.svg" alt=""></button>
+        </div>
+        <div class="sond-toggle">
+            <button id="toggleMusic"><img src="image/white-on.svg" alt=""></button>
+        </div>
+
+        <audio id="backgroundMusic" loop>
+            <source src="musique/main-music.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="home-page-title">
+            <h1> L’impact de Genshin </h1>
+            <h2 style="color: white;"> Voir quel texte écrire </h2>
+        </div>
+
+        <video autoplay muted loop id="dayHomePage" class="annim_home_page_day">
+            <source src="animation/genshin-jour.mp4" type="video/mp4">
+        </video>
+        <div class="gradient-overlay"></div>
+
+        <video autoplay muted loop id="nightHomePage" class="annim_home_page_night">
+            <source src="animation/genshin-nuit.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <div class="espacement-hauteur"></div>
+    <div class="contenaire">
+        <h2>Titre de l’article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Massa lorem semper amet vulputate pulvinar augue bibendum fusce.
+            Justo sed hendrerit consectetur eu ut ullamcorper pellentesque velit. Sagittis ut eget pharetra mauris leo
+            diam. Scelerisque vitae tempor nullam netus rhoncus commodo. Nisl magna ultrices vitae ac. Aliquam in
+            pellentesque risus commodo volutpat et euismod malesuada ut. Nunc rutrum nulla dolor est. Sed molestie
+            libero fames nulla nisi ut magna eget interdum. Tristique scelerisque tellus dui lobortis iaculis elementum.
+            Molestie vestibulum venenatis mi nunc.</p>
+
+        <p>Sed interdum risus semper justo sit sed duis ut ut. Integer consequat malesuada sed elementum ultrices amet.
+            Urna habitasse diam tellus nullam ultrices ipsum erat mattis. Adipiscing mauris viverra scelerisque mattis
+            netus aliquet mauris tincidunt sodales. Et in vel nulla pretium duis adipiscing vulputate ultricies. Quis
+            integer tempor risus nullam amet arcu enim risus. Aliquam eget quisque sed nibh maecenas vitae amet
+            molestie. Duis tellus tortor gravida condimentum ultricies amet pretium in.
+            Vestibulum dolor suscipit tristique morbi. Egestas enim ac viverra odio ac quis. Fringilla scelerisque odio
+            mattis pulvinar nunc volutpat.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur. Sed pharetra in morbi erat. Commodo scelerisque quis ultricies
+            laoreet amet dolor lobortis. Risus montes gravida et massa velit phasellus. Tempus gravida viverra facilisis
+            mi. Id facilisi eget habitasse quis tempor. Aliquam ut cursus phasellus vitae proin at facilisi parturient
+            ullamcorper. Mollis pellentesque nunc senectus nisl nunc. Praesent turpis donec porttitor aenean. Sagittis
+            mauris vitae sem eu tristique id. Purus mauris pellentesque quis habitant semper. Cras arcu id feugiat a
+            amet sed facilisi.</p>
+    </div>
+
+
+    <footer>
+        <h2 style="color: white;">L’impact de Genshin</h2>
+        <div class="espacement-footer"></div>
+        <a href=""><h3>Accueil</h3></a>
+        <div class="espacement-footer"></div>
+        <a href=""><h3>Nos données</h3></a>
+        <div class="espacement-footer"></div>
+        <a href=""><h3>Nos personnages</h3></a>
+        <div class="espacement-footer"></div>
+        <a href=""><h3>Mentions légales</h3></a>
+        <div class="espacement-footer"></div>
+        <a href=""><img src="image/star-footer.svg" alt="">
+    </footer>
+    <script src="js/night_day.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+
+.gradient-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FFF 1.48%, rgba(255, 255, 255, 0.00) 22.74%);
+}
+
+.home-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.annim_home_page_night, .annim_home_page_day{
+  z-index: 0;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -100vh;
+  position: absolute;
+}
+
+
+.annim_home_page_day {
+  z-index: 0;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theme-toggle {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+button {
+  padding: 0%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+}
+
+.sond-toggle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+#nightHomePage {
+  display: none;
+}
+
+.espacement-hauteur{
+  margin-top: 15vh;
+}
+
+.contenaire {
+  margin-right: 30%; 
+  margin-left: 5%; 
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .contenaire {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+  }
+}
+
+footer{
+  margin-top: 15vh;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  background-color: #212222;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+}
+
+footer a{
+  display: inline-block; 
+  
+  text-decoration-color: white; 
+}
+
+footer .espacement-footer{
+  margin-top: 15px;
+  
+}
