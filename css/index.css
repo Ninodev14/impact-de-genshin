@@ -2,11 +2,34 @@ body {
   margin: 0;
 }
 
-#scroll-menue {
+#close-nav{
   cursor: pointer;
+  position: fixed;
+  width: 35px;
+  height: auto;
+  top: 30px;
+  right: 50px;
+}
+
+#barre-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  right: 0; 
+  height: 100%;
+  width: 35vw;
+  background-color: #212222;
+  transition: transform 0.3s ease;
+  transform: translateX(40vw);
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#scroll-menue {
   width: 40px;
   height: auto;
-  display: none;
+
   z-index: 1000;
   position: fixed;
   top: 10%;
@@ -25,7 +48,12 @@ body {
   margin-bottom: 50px;
 }
 #day-nav{
+  cursor: pointer;
   margin-bottom: 30px;
+}
+
+#sond-nav{
+  cursor: pointer;
 }
 
 .separation-svg-header {
@@ -139,6 +167,38 @@ footer .espacement-footer {
 
 }
 
+#barre-menu a h2{
+  
+  color: #FFF !important;
+}
+
+#barre-menu a {
+  display: inline;
+  text-decoration: none;
+  text-decoration-color: white;
+  text-align: end;
+}
+
+nav{
+  margin-top: 125px;
+  margin-right: 50px; 
+}
+#barre-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#menue-menue {
+  display: flex;
+  margin-left: 60%;
+}
+
+#menue-menue img {
+  height: auto;
+  width: 40px;
+  margin: 0 10px; 
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .contenaire {
@@ -155,4 +215,33 @@ footer .espacement-footer {
     display: none;
   }
 
+  #barre-menu {
+    transform: translateX(100vw);
+    width: 100vw;
+  }
+
+  #day-nav{
+    display: none;
+  }
+  #sond-nav{
+    display: none;
+  }
+  #scroll-menue {
+    width: 40px;
+    top: 0;
+    margin-top: -5vh;
+
+    padding: 40px 15px 15px 15px;
+  }
+  #sanditch-nav{
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+  #h2-titre{
+    margin-top: -30px;
+  }
+
+  .home-page-title{
+    align-items: start;
+  }
 }

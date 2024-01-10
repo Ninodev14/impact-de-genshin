@@ -1,28 +1,18 @@
 backgroundMusic.play();
 let etat = 0;
-let menueEtat = 0;
+let menuEtat = 0;
 let sky = 0;
 let color = 0;
+const barreMenu = document.getElementById("barre-menu");
+const closeMenu = document.getElementById("close-nav");
 const menue = document.getElementById("scroll-menue");
-
-window.addEventListener("scroll", function () {
-  const hauteurDeScroll = window.scrollY;
-
-
-  let hauteurApparition = 50;
-
-  if (hauteurDeScroll > hauteurApparition) {
-    menue.style.display = "block";
-  } else {
-    menue.style.display = "none";
-  }
-});
+const menueNav = document.getElementById("sanditch-nav");
+const dayMenue = document.getElementById("day-menue");
+const sondMenue = document.getElementById("sond-menue");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const menue = document.getElementById("scroll-menue");
-  const day = document.getElementById("day");
+  
   const dayNav = document.getElementById("day-nav");
-  const sond = document.getElementById("sond");
   const sondNav = document.getElementById("sond-nav");
   const h1Titre = document.getElementById("h1-titre");
   const h2Titre = document.getElementById("h2-titre");
@@ -44,37 +34,39 @@ document.addEventListener("DOMContentLoaded", function () {
       gradient.style.background = "linear-gradient(0deg, #212222 1.48%, rgba(33, 34, 34, 0.00) 22.74%)";    
       dayHomePage.style.display = "block";
       nightHomePage.style.display = "none";
-      day.src = "image/black-night.svg";
       dayNav.src = "image/white-night.svg";
+      dayMenue.src = "image/white-night.svg";
       h1Titre.style.color = "#212222";
       h1Titre.style.textShadow = "0px 0px 8px rgba(f, f, f, 0.35)";
       h2Titre.style.color = "#212222";
       h2.style.color = "#fff";
-      menue.style.backgroundColor = "#212222";
+      menue.style.backgroundColor = "#000";
+      barreMenu.style.backgroundColor = "#000";
       p.forEach(p => {
         p.style.color = "#fff";
       });
       separationHeader.src = "image/header-limitation-black.svg";
       sky = 1;
       if(etat == 1) {
-      sond.src = "image/black-mute.svg";
       sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
       color = 0;
     } else {
-      sond.src = "image/black-on.svg";
       sondNav.src = "image/white-on.svg";
+      sondMenue.src = "image/white-mute.svg";
       color = 0;
     }
   }else {
-    menue.style.backgroundColor = "#000";
+    barreMenu.style.backgroundColor = "#212222";
+    menue.style.backgroundColor = "#212222";
     gradient.style.background = "linear-gradient(0deg, #FFF 1.48%, rgba(255, 255, 255, 0.00) 22.74%)";
     footer.style.backgroundColor = "#212222"
     body.style.backgroundColor = "#fff"
     body.classList.add("night-mode");
     dayHomePage.style.display = "none";
     nightHomePage.style.display = "block";
-    day.src = "image/white-day.svg";
     dayNav.src = "image/white-day.svg";
+    dayMenue.src = "image/white-day.svg";
     h1Titre.style.color = "#fff";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#fff";
@@ -86,18 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sky = 0;
     if(etat == 1) {
-    sond.src = "image/white-mute.svg";
     sondNav.src = "image/white-mute.svg";
+    sondMenue.src = "image/white-mute.svg";
     color = 1;
   } else {
-    sond.src = "image/white-on.svg";
     sondNav.src = "image/white-on.svg";
+    sondMenue.src = "image/white-mute.svg";
     color = 1;
   }
 }
   };
 
-day.addEventListener("click", handleDayClick);
+dayMenue.addEventListener("click", handleDayClick);
 dayNav.addEventListener("click", handleDayClick);
 
 function toggleMusic() {
@@ -109,35 +101,44 @@ function toggleMusic() {
 
   if (etat == 0) {
     if (color == 1) {
-      sond.src = "image/white-mute.svg";
       sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
     } else {
-      sond.src = "image/black-mute.svg";
       sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
     }
     etat = 1;
   } else {
     if (color == 1) {
-      sond.src = "image/white-on.svg";
       sondNav.src = "image/white-on.svg";
+      sondMenue.src = "image/white-mute.svg";
     } else {
-      sond.src = "image/black-on.svg";
       sondNav.src = "image/white-on.svg";
+      sondMenue.src = "image/white-mute.svg";
     }
     etat = 0;
   }
 }
-sond.addEventListener("click", toggleMusic);
 sondNav.addEventListener("click", toggleMusic);
+sondMenue.addEventListener("click", toggleMusic);
 
 function openOut() {
-  if (menueEtat == 0) {
-    menueEtat = 1;
+
+  if (menuEtat == 0) {
+    menuEtat = 1;
+    barreMenu.style.transform = "translateX(0)";
+    console.log(menuEtat)
+    menue.style.display = "none";
+
   } else {
-    menueEtat = 0;
+    menuEtat = 0;
+    barreMenu.style.transform = "translateX(100vw)";
+    menue.style.display = "block";
+
+    console.log(menuEtat)
   }
 }
 
-menue.addEventListener("click", openOut);
-
+menueNav.addEventListener("click", openOut);
+closeMenu.addEventListener("click", openOut);
 });
