@@ -1,0 +1,109 @@
+body {
+    background-image: url('/image/charactere/backgroundRainer.png');
+    background-size: cover;
+
+}
+.top-conteneur{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+}
+a{
+text-decoration: none;
+z-index: 2;
+}
+
+a:hover{
+text-decoration: underline;
+text-decoration-color: #fff ;
+}
+h1{
+    color: #CFBD93;
+    margin-left: -37%;
+}
+h2{
+    color: #fff;
+}
+
+#blocPerso .eyes {
+    margin-left: -16px;
+    width: 88px;
+    height: 109px;
+    padding-bottom: 15.8px
+}
+
+#blocPerso img {
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.equar {
+    left: 0;
+    margin-top: 224px;
+    position: absolute;
+    z-index: 1;
+
+    background-color: #fff;
+    width: 5%;
+    height: 64px;
+}
+
+.end {
+    left: 0;
+    margin-left: 5%;
+    margin-top: 224px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 32px 32px 0;
+    background-color: #fff;
+    width: 65px;
+    height: 64px;
+}
+
+#blocPerso {
+
+    display: flex;
+    flex-direction: column;
+    width: 58px;
+    height: 75px;
+    flex-shrink: 0;
+}
+
+#blocGaucheHaut {
+    justify-content: center;
+    top: 0;
+    width: 75px;
+    margin-left: 5%;
+    display: flex;
+    border: 4px solid #88847A;
+    height: 100vh;
+    background: linear-gradient(180deg, #4C5362 0%, rgba(76, 83, 98, 0.00) 100%);
+}
+
+.conteneur-text {
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 33%;
+}
+
+.separation{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: auto;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.text-reponce{
+    display: flex;
+    justify-content: space-between;
+}
+
+#blocHaut {
+    width: 95%;
+    display: flex;
+
+}
