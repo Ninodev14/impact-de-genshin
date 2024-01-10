@@ -9,6 +9,7 @@ const menue = document.getElementById("scroll-menue");
 const menueNav = document.getElementById("sanditch-nav");
 const dayMenue = document.getElementById("day-menue");
 const sondMenue = document.getElementById("sond-menue");
+const conteneurFlou = document.getElementById("conteneur-flou");
 
 document.addEventListener("DOMContentLoaded", function () {
   
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nightHomePage = document.getElementById("nightHomePage");
   const backgroundMusic = document.getElementById("backgroundMusic");
   const footer = document.getElementById("footer");
- 
+
   function handleDayClick() {
     if ( sky == 0){
       body.classList.remove("night-mode");
@@ -129,16 +130,19 @@ function openOut() {
     barreMenu.style.transform = "translateX(0)";
     console.log(menuEtat)
     menue.style.display = "none";
+    conteneurFlou.style.display = "block";
 
   } else {
     menuEtat = 0;
     barreMenu.style.transform = "translateX(100vw)";
     menue.style.display = "block";
-
+    conteneurFlou.style.display = "none";
     console.log(menuEtat)
   }
+  
 }
 
+conteneurFlou.addEventListener("click", openOut);
 menueNav.addEventListener("click", openOut);
 closeMenu.addEventListener("click", openOut);
 });
