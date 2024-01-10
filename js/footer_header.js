@@ -8,9 +8,9 @@ const menue = document.getElementById("scroll-menue");
 const menueNav = document.getElementById("sanditch-nav");
 const dayMenue = document.getElementById("day-menue");
 const conteneurFlou = document.getElementById("conteneur-flou");
-const h2 = document.querySelectorAll("h2");
-const h3 = document.querySelectorAll("h3");
-const p = document.querySelectorAll("p");
+const h2 = document.querySelectorAll(".h2");
+const h3 = document.querySelectorAll(".h3");
+const p = document.querySelectorAll(".p");
 
 
 document.addEventListener("DOMContentLoaded", function () {
