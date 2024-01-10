@@ -1,0 +1,25 @@
+body{
+    background-image: url('/impact-de-genshin/image/charactere/backgroundDendro.jpg');
+    background-size: cover;
+
+}
+
+#blocPerso{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+
+}
+
+#blocGaucheHaut{
+    display: flex;
+}
+
+#blocHaut{
+
+    display: flex;
+    justify-content: space-between
+
+
+}
