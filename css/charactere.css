@@ -1,5 +1,5 @@
 body{
-    background-image: url('/impact-de-genshin/image/charactere/backgroundDendro.jpg');
+    background-image: url('/image/charactere/backgroundDendro.jpg');
     background-size: cover;
 
 }
@@ -20,6 +20,4 @@ body{
 
     display: flex;
     justify-content: space-between
-
-
 }
