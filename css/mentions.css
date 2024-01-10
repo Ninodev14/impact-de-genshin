@@ -1,0 +1,17 @@
+body {
+    margin-left: 5%;
+}
+
+#mentions h2{
+    margin-bottom: 5vh;
+}
+
+#mentions h3{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+#mentions h3{
+    color: #212222;
+}
+
