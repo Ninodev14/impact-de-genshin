@@ -8,6 +8,10 @@ const menue = document.getElementById("scroll-menue");
 const menueNav = document.getElementById("sanditch-nav");
 const dayMenue = document.getElementById("day-menue");
 const conteneurFlou = document.getElementById("conteneur-flou");
+const h2 = document.querySelectorAll("h2");
+const h3 = document.querySelectorAll("h3");
+const p = document.querySelectorAll("p");
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -25,7 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
             menue.style.backgroundColor = "#000";
             barreMenu.style.backgroundColor = "#000";
             sky = 1;
-            console.log("tst")
+            h2.forEach(h2 => {
+                h2.style.color = "#fff";
+            });
+            h3.forEach(h3 => {
+                h3.style.color = "#fff";
+            });
+            p.forEach(p => {
+                p.style.color = "#fff";
+            });
 
         } else {
             body.style.backgroundColor = "#ffffff"
@@ -37,7 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
             dayNav.src = "image/white-day.svg";
             dayMenue.src = "image/white-day.svg";
             sky = 0;
-            console.log("test")
+
+            h2.forEach(h2 => {
+                h2.style.color = "#212222";
+            });
+            h3.forEach(h3 => {
+                h3.style.color = "#212222";
+            });
+            p.forEach(p => {
+                p.style.color = "#212222";
+            });
         }
     };
 
