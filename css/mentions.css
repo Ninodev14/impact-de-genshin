@@ -1,0 +1,30 @@
+.contenaire {
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+.text-contenaire{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.part1-contenaire{
+    margin-right: 100px;
+}
+.contenaire h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contenaire h3{
+    color: #212222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.link-name{
+    display: flex;
+    margin-bottom: 8px;
+}
+.link-name a{
+ margin-left: 5px;
+}
