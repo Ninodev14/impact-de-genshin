@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     z-index: 1;
-    color: #000000;
+    color: #212222;
     font-family: Philosopher;
     font-size: 38px;
     font-style: normal;
@@ -29,7 +29,7 @@ h3 {
 }
 
 p {
-    color: #000;
+    color: #212222;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;

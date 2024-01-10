@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const night = document.getElementById("night");
   const sond = document.getElementById("sond");
   const sondNav = document.getElementById("sond-nav");
+  const h1 = document.getElementById("h1");
+  const h2 = document.getElementById("h2");
+  const separationHeader = document.getElementById("separation-svg-header");
   const body = document.body;
   const dayHomePage = document.getElementById("dayHomePage");
   const nightHomePage = document.getElementById("nightHomePage");
@@ -34,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     night.src = "image/black-night.svg";
     day.style.cursor = "default";
     night.style.cursor = "pointer";
+    h1.style.color = "#212222";
+    h1.style.textShadow = "0px 0px 8px rgba(f, f, f, 0.35)";
+    h2.style.color = "#212222";
+    separationHeader.src = "image/header-limitation-black.svg";
     if (etat == 1) {
       sond.src = "image/black-mute.svg"; 
       color = 0;
@@ -51,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     day.style.cursor = "pointer";
     night.style.cursor = "default";
     night.src = "image/white-night.svg";
+    h1.style.color = "#fff";
+    h1.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
+    h2.style.color = "#fff";
+    separationHeader.src = "image/header-limitation-white.svg";
     if (etat == 1) {
       sond.src = "image/white-mute.svg"; 
       color = 1;
