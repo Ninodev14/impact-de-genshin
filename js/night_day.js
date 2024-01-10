@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
       body.style.backgroundColor = "#212222"
       footer.style.backgroundColor = "#000000"
       gradient.style.background = "linear-gradient(0deg, #212222 1.48%, rgba(33, 34, 34, 0.00) 22.74%)";    
-      dayHomePage.style.display = "block";
-      nightHomePage.style.display = "none";
+      dayHomePage.style.display = "none";
+      nightHomePage.style.display = "block";
       dayNav.src = "image/white-night.svg";
       dayMenue.src = "image/white-night.svg";
-      h1Titre.style.color = "#212222";
-      h1Titre.style.textShadow = "0px 0px 8px rgba(f, f, f, 0.35)";
-      h2Titre.style.color = "#212222";
+      h1Titre.style.color = "#ffffff";
+      h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
+      h2Titre.style.color = "#ffffff";
       h2.style.color = "#fff";
       menue.style.backgroundColor = "#000";
       barreMenu.style.backgroundColor = "#000";
       p.forEach(p => {
         p.style.color = "#fff";
       });
-      separationHeader.src = "image/header-limitation-black.svg";
+      separationHeader.src = "image/header-limitation-white.svg";
       sky = 1;
       if(etat == 1) {
       sondNav.src = "image/white-mute.svg";
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       color = 0;
     } else {
       sondNav.src = "image/white-on.svg";
-      sondMenue.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-on.svg";
       color = 0;
     }
   }else {
@@ -63,18 +63,18 @@ document.addEventListener("DOMContentLoaded", function () {
     footer.style.backgroundColor = "#212222"
     body.style.backgroundColor = "#fff"
     body.classList.add("night-mode");
-    dayHomePage.style.display = "none";
-    nightHomePage.style.display = "block";
+    dayHomePage.style.display = "block";
+    nightHomePage.style.display = "none";
     dayNav.src = "image/white-day.svg";
     dayMenue.src = "image/white-day.svg";
-    h1Titre.style.color = "#fff";
+    h1Titre.style.color = "#212222";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
-    h2Titre.style.color = "#fff";
+    h2Titre.style.color = "#212222";
     h2.style.color = "#212222";
     p.forEach(p => {
       p.style.color = "#212222";
     });
-    separationHeader.src = "image/header-limitation-white.svg";
+    separationHeader.src = "image/header-limitation-black.svg";
 
     sky = 0;
     if(etat == 1) {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     color = 1;
   } else {
     sondNav.src = "image/white-on.svg";
-    sondMenue.src = "image/white-mute.svg";
+    sondMenue.src = "image/white-on.svg";
     color = 1;
   }
 }
@@ -111,10 +111,10 @@ function toggleMusic() {
   } else {
     if (color == 1) {
       sondNav.src = "image/white-on.svg";
-      sondMenue.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-on.svg";
     } else {
       sondNav.src = "image/white-on.svg";
-      sondMenue.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-on.svg";
     }
     etat = 0;
   }

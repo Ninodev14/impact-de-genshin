@@ -45,7 +45,7 @@ body {
   height: auto;
   z-index: 999;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 #day-nav{
   cursor: pointer;
@@ -158,7 +158,7 @@ footer {
 
 footer a {
   display: inline-block;
-
+  text-decoration: none;
   text-decoration-color: white;
 }
 
@@ -179,14 +179,21 @@ footer .espacement-footer {
   text-align: end;
 }
 
-nav{
-  margin-top: 125px;
-  margin-right: 50px; 
-}
 #barre-menu a:hover {
   text-decoration: underline;
   text-decoration-color: white;
 }
+
+
+nav{
+  margin-top: 125px;
+  margin-right: 50px; 
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 
 #menue-menue {
   display: flex;
