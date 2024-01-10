@@ -5,11 +5,10 @@
 
 .text-contenaire{
     display: flex;
-    flex-wrap: wrap
 }
 
-.part1-contenaire{
-    margin-right: 100px;
+.espacement-contenaire{
+    margin-right: 5%;
 }
 .contenaire h2 {
     margin-top: 20px;
@@ -28,3 +27,13 @@
 .link-name a{
  margin-left: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .text-contenaire{
+        display: block;
+        
+    }
+    .espacement-contenaire{
+       display: none;
+    }
+  }
