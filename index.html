@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="font/font.css">
-    <title>Document</title>
+    <title>Impact de Genshin - Acceuil</title>
 </head>
 
 <body>
     <header>
         <div class="theme-toggle">
-            <button id="dayButton"><img src="image/white-day.svg" alt=""></button>
-            <button id="nightButton"><img src="image/white-night.svg" alt=""></button>
+            <img id="day" src="image/white-day.svg" alt="">
+            <img id="night" src="image/white-night.svg" alt="">
         </div>
         <div class="sond-toggle">
-            <button id="toggleMusic"><img src="image/white-on.svg" alt=""></button>
+            <img id="sond" src="image/white-on.svg" alt="">
         </div>
 
         <audio id="backgroundMusic" loop>
@@ -25,6 +25,7 @@
 
         <div class="home-page-title">
             <h1> L’impact de Genshin </h1>
+            <img class="separation-svg-header" src="image/header-limitation.svg" alt="">
             <h2 style="color: white;"> Voir quel texte écrire </h2>
         </div>
 
@@ -37,7 +38,11 @@
             <source src="animation/genshin-nuit.mp4" type="video/mp4">
         </video>
     </header>
-
+    <div id="scroll-menue">
+        <div class="sond-toggle">
+            <img id="sond-nav" src="image/black-on.svg" alt="">
+        </div>
+    </div>
     <div class="espacement-hauteur"></div>
     <div class="contenaire">
         <h2>Titre de l’article</h2>
@@ -67,6 +72,7 @@
 
     <footer>
         <h2 style="color: white;">L’impact de Genshin</h2>
+        <img class="separation-svg-footer"  src="image/footer-limitation.svg" alt="">
         <div class="espacement-footer"></div>
         <a href=""><h3>Accueil</h3></a>
         <div class="espacement-footer"></div>

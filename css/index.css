@@ -2,6 +2,39 @@ body {
   margin: 0;
 }
 
+#scroll-menue {
+  cursor: pointer;
+  width: 40px;
+  height: auto;
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.separation-svg-header {
+  z-index: 999;
+  height: auto;
+  width: 30vw;
+}
+
+.separation-svg-footer {
+  z-index: 999;
+  height: auto;
+  width: 70vw;
+}
+
+
+.theme-toggle,
+.sond-toggle img {
+  width: 40px;
+  height: auto;
+  z-index: 999;
+  cursor: pointer;
+}
+
+
 
 .gradient-overlay {
   z-index: 10;
@@ -22,7 +55,8 @@ body {
   margin: 0;
 }
 
-.annim_home_page_night, .annim_home_page_day{
+.annim_home_page_night,
+.annim_home_page_day {
   z-index: 0;
   align-self: center;
   justify-self: center;
@@ -44,50 +78,32 @@ body {
 }
 
 .theme-toggle {
+  display: flex;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: 10px;
+  right: 50px;
   z-index: 999;
-}
-
-button {
-  padding: 0%;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  border-radius: 50%;
 }
 
 .sond-toggle {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   left: 10px;
   z-index: 999;
 }
 
-#nightHomePage {
-  display: none;
-}
 
-.espacement-hauteur{
+.espacement-hauteur {
   margin-top: 15vh;
 }
 
 .contenaire {
-  margin-right: 30%; 
-  margin-left: 5%; 
+  margin-right: 30%;
+  margin-left: 5%;
   text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
-  .contenaire {
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: justify;
-  }
-}
-
-footer{
+footer {
   margin-top: 15vh;
   padding-top: 2vh;
   padding-bottom: 4vh;
@@ -97,13 +113,31 @@ footer{
   justify-self: center;
 }
 
-footer a{
-  display: inline-block; 
-  
-  text-decoration-color: white; 
+footer a {
+  display: inline-block;
+
+  text-decoration-color: white;
 }
 
-footer .espacement-footer{
+footer .espacement-footer {
   margin-top: 15px;
-  
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenaire {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+  }
+
+  .separation-svg-header {
+    display: none;
+  }
+
+  .separation-svg-footer {
+    display: none;
+  }
+
 }
