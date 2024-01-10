@@ -1,11 +1,12 @@
 backgroundMusic.play();
 let etat = 0;
+let menueEtat = 0;
 let sky = 0;
 let color = 0;
-var menue = document.getElementById("scroll-menue");
+const menue = document.getElementById("scroll-menue");
 
 window.addEventListener("scroll", function () {
-  var hauteurDeScroll = window.scrollY;
+  const hauteurDeScroll = window.scrollY;
 
 
   let hauteurApparition = 50;
@@ -18,6 +19,7 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const menue = document.getElementById("scroll-menue");
   const day = document.getElementById("day");
   const dayNav = document.getElementById("day-nav");
   const sond = document.getElementById("sond");
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       h1Titre.style.textShadow = "0px 0px 8px rgba(f, f, f, 0.35)";
       h2Titre.style.color = "#212222";
       h2.style.color = "#fff";
+      menue.style.backgroundColor = "#212222";
       p.forEach(p => {
         p.style.color = "#fff";
       });
@@ -63,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       color = 0;
     }
   }else {
+    menue.style.backgroundColor = "#000";
     gradient.style.background = "linear-gradient(0deg, #FFF 1.48%, rgba(255, 255, 255, 0.00) 22.74%)";
     footer.style.backgroundColor = "#212222"
     body.style.backgroundColor = "#fff"
@@ -125,5 +129,15 @@ function toggleMusic() {
 }
 sond.addEventListener("click", toggleMusic);
 sondNav.addEventListener("click", toggleMusic);
+
+function openOut() {
+  if (menueEtat == 0) {
+    menueEtat = 1;
+  } else {
+    menueEtat = 0;
+  }
+}
+
+menue.addEventListener("click", openOut);
 
 });
