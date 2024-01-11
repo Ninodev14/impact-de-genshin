@@ -1,3 +1,9 @@
+.scroll-appear {
+  opacity: 0;
+  transform: translateY(20px); /* Move the elements down initially */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
 #sond-nav {
   cursor: pointer;
 }
