@@ -5,12 +5,12 @@ function handleScrollAppear() {
         var position = element.getBoundingClientRect();
 
         // Check if the element is in the viewport
-        if (position.top <= window.innerHeight * 0.75) {
+        if (position.top <= window.innerHeight * 0.90) {
             element.style.opacity = 1;
             element.style.transform = 'translateY(0)';
         } else {
             element.style.opacity = 0;
-            element.style.transform = 'translateY(20px)';
+            element.style.transform = 'translateY(60px)';
         }
     });
 }
