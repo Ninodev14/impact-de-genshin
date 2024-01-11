@@ -141,7 +141,7 @@ h2{
     .top-conteneur h1{
         color: #CFBD93;
         margin-left: 5%;
-        margin-top: -85vh;
+        margin-top: -90vh;
     }
     .top-conteneur h3{
         display: none;
@@ -157,7 +157,7 @@ h2{
         border-top: 4px solid #88847A;
         border-bottom: none;
         position: fixed;
-        height: 100px;
+        height: 60px;
         background: linear-gradient( 90deg, #4C5362 0%, rgba(76, 83, 98, 0.00) 300%);    
     }
     body {
@@ -169,17 +169,17 @@ h2{
     .responice-eyes{
         margin-top: -16px;
         width: auto;
-        height: 120px;
+        height: 75px;
     }
     .responcive-head{
         width: auto;
-        height: 90px;
+        height: 55px;
     }
     .nav-bas a{
-        margin-left: 25px;
+        margin-left: 30px;
     }
     .align-droit {
-        margin-right: 25px;
+        margin-right: 35px;
         display: flex;
         justify-content: flex-end;
         width: 100%;
