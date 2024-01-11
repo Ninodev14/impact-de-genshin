@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const backgroundMusic = document.getElementById("backgroundMusic");
   const footer = document.getElementById("footer");
   const graph = document.getElementById("graph");
-  const contenaire = document.getElementById("contenaire");
 
   function handleDayClick() {
     if ( sky == 0){
@@ -150,7 +149,6 @@ function openOut() {
     console.log(menuEtat)
     menue.style.display = "none";
     conteneurFlou.style.display = "block";
-    contenaire.style.marginRight = "calc(35% + 15px)";
 
   } else {
     document.body.style.overflow = 'visible'
@@ -158,7 +156,6 @@ function openOut() {
     barreMenu.style.transform = "translateX(100vw)";
     menue.style.display = "block";
     conteneurFlou.style.display = "none";
-    contenaire.style.marginRight = "35%";
     console.log(menuEtat)
   }
   
