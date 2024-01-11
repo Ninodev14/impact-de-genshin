@@ -18,9 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const dayNav = document.getElementById("day-nav");
     const body = document.body;
     const footer = document.getElementById("footer");
-
+    var images = document.querySelectorAll('.ico');
+    var imageC = document.querySelectorAll('.center');
+  
     function handleDayClick() {
-        if (sky == 0) {
+      if ( sky == 0){
+        images.forEach(function(image) {
+            var currentSrc = image.src;
+            if (currentSrc.endsWith('.png')) {
+              var newSrc = currentSrc.replace('.png', 'N.png');
+              image.src = newSrc;
+            }
+          });
+          imageC.forEach(function(imagev) {
+              var currentSrc = imagev.src;
+              if (currentSrc.endsWith('.svg')) {
+                var newSrc = currentSrc.replace('.svg', 'N.svg');
+                imagev.src = newSrc;
+              }
+            });
+            
+            images = document.querySelectorAll('.ico');
+            imageC = document.querySelectorAll('.center');
             body.classList.remove("night-mode");
             body.style.backgroundColor = "#212222"
             footer.style.backgroundColor = "#000000"
@@ -40,6 +59,24 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
         } else {
+
+            images.forEach(function(image) {
+                var currentSrc = image.src;
+                if (currentSrc.endsWith('N.png')) {
+                  var newSrc = currentSrc.replace('N.png', '.png');
+                  image.src = newSrc;
+                }
+              });
+              imageC.forEach(function(imagev) {
+                  var currentSrc = imagev.src;
+                  if (currentSrc.endsWith('N.svg')) {
+                    var newSrc = currentSrc.replace('N.svg', '.svg');
+                    imagev.src = newSrc;
+                  }
+                });
+                
+                images = document.querySelectorAll('.ico');
+                imageC = document.querySelectorAll('.center');
             body.style.backgroundColor = "#ffffff"
             barreMenu.style.backgroundColor = "#212222";
             menue.style.backgroundColor = "#212222";
