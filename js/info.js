@@ -1,3 +1,5 @@
+
+var Back = document.getElementById("informationBoxBack");
 function showInformationBox(boxId) {
     // Hide all information boxes
     var allBoxes = document.querySelectorAll('.information-box');
@@ -18,6 +20,7 @@ var allBoxes = document.querySelectorAll('.information-box');
 allBoxes.forEach(function(box) {
   box.style.display = 'none';
 });
+Back.style.display = 'block';
 }
 
 
