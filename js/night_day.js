@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
       gradient.style.background = "linear-gradient(0deg, #212222 1.48%, rgba(33, 34, 34, 0.00) 22.74%)";    
       dayHomePage.style.display = "none";
       nightHomePage.style.display = "block";
-      dayNav.src = "image/white-night.svg";
-      dayMenue.src = "image/white-night.svg";
+      dayNav.src = "image/white-day.svg";
+      dayMenue.src = "image/white-day.svg";
       h1Titre.style.color = "#ffffff";
       h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
       h2Titre.style.color = "#ffffff";
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.add("night-mode");
     dayHomePage.style.display = "block";
     nightHomePage.style.display = "none";
-    dayNav.src = "image/white-day.svg";
-    dayMenue.src = "image/white-day.svg";
+    dayNav.src = "image/white-night.svg";
+    dayMenue.src = "image/white-night.svg";
     h1Titre.style.color = "#212222";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#212222";

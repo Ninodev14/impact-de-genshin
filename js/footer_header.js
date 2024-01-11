@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
             body.classList.remove("night-mode");
             body.style.backgroundColor = "#212222"
             footer.style.backgroundColor = "#000000"
-            dayNav.src = "image/white-night.svg";
-            dayMenue.src = "image/white-night.svg";
+            dayNav.src = "image/white-day.svg";
+            dayMenue.src = "image/white-day.svg";
             menue.style.backgroundColor = "#000";
             barreMenu.style.backgroundColor = "#000";
             sky = 1;
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
             footer.style.backgroundColor = "#212222"
             body.style.backgroundColor = "#fff"
             body.classList.add("night-mode");
-            dayNav.src = "image/white-day.svg";
-            dayMenue.src = "image/white-day.svg";
+            dayNav.src = "image/white-night.svg";
+            dayMenue.src = "image/white-night.svg";
             sky = 0;
 
             h2.forEach(h2 => {
