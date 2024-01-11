@@ -65,6 +65,16 @@ h2 {
     height: 64px;
 }
 
+.star{
+    left: 0;
+    margin-left: calc(5% + 45px);
+    margin-top: 133px;
+    position: absolute;
+    z-index: 1;
+    height: 64px;
+    width: auto;
+}
+
 #blocPerso {
 
     display: flex;
