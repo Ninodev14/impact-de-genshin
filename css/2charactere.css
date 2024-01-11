@@ -22,7 +22,7 @@ text-decoration-color: #fff ;
 }
 h1{
     color: #CFBD93;
-    margin-left: -37%;
+    margin-left: calc(-40% + -45px);
 }
 h2{
     color: #fff;
