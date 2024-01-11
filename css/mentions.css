@@ -36,6 +36,14 @@
     color: #3B8CD4;
 }
 
+.copy {
+    margin-top: 128px;
+    margin-bottom: -128px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+}
+
 @media screen and (max-width: 768px) {
     .text-contenaire {
         display: block;
