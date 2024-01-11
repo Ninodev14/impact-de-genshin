@@ -122,3 +122,73 @@ h2{
     display: flex;
 
 }
+
+
+@media screen and (max-width: 1060px) {
+    #blocGaucheHaut{
+        display: none;
+    }
+
+    .conteneur-text {
+        margin-top: calc(8% + 150px);
+        width: 95%;
+    }
+
+    #blocHaut {
+
+    display: block;
+    }
+    .top-conteneur h1{
+        color: #CFBD93;
+        margin-left: 5%;
+        margin-top: -85vh;
+    }
+    .top-conteneur h3{
+        display: none;
+    }
+    .nav-bas{
+        align-items: center;
+        justify-content: start;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        border-left:none;
+        border-right: none;
+        border-top: 4px solid #88847A;
+        border-bottom: none;
+        position: fixed;
+        height: 100px;
+        background: linear-gradient( 90deg, #4C5362 0%, rgba(76, 83, 98, 0.00) 300%);    
+    }
+    body {
+        background-image: url('/image/charactere/backgroundRainer.png');
+        background-size: cover;
+        height: 100vh;
+        margin: 0; 
+    }
+    .responice-eyes{
+        margin-top: -16px;
+        width: auto;
+        height: 120px;
+    }
+    .responcive-head{
+        width: auto;
+        height: 90px;
+    }
+    .nav-bas a{
+        margin-left: 25px;
+    }
+    .align-droit {
+        margin-right: 25px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1060px) {
+
+    .nav-bas{
+        display: none;
+    }
+  }
