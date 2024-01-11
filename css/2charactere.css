@@ -130,7 +130,7 @@ h2{
     }
 
     .conteneur-text {
-        margin-top: calc(8% + 150px);
+        margin-top:50px;
         width: 95%;
     }
 
@@ -139,9 +139,7 @@ h2{
     display: block;
     }
     .top-conteneur h1{
-        color: #CFBD93;
-        margin-left: 5%;
-        margin-top: -90vh;
+        display: none;
     }
     .top-conteneur h3{
         display: none;
@@ -184,10 +182,16 @@ h2{
         justify-content: flex-end;
         width: 100%;
     }
+    .responsive-h1{
+        padding-top: 30px;
+        margin-left: 5%
+    }
   }
 
   @media screen and (min-width: 1060px) {
-
+    .responsive-h1{
+        display: none;
+    }
     .nav-bas{
         display: none;
     }
