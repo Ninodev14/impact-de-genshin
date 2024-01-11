@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const h1Titre = document.getElementById("h1-titre");
   const h2Titre = document.getElementById("h2-titre");
   const h2 = document.getElementById("h2");
-  const h3 = document.querySelectorAll("h3");
+  const h3 = document.querySelectorAll("#h3");
+  const a = document.querySelectorAll("#a");
   const p = document.querySelectorAll("p");
   const gradient = document.getElementById("gradient-overlay");
   const separationHeader = document.getElementById("separation-svg-header");
@@ -27,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const nightHomePage = document.getElementById("nightHomePage");
   const backgroundMusic = document.getElementById("backgroundMusic");
   const footer = document.getElementById("footer");
+  const graph = document.getElementById("graph");
+  const contenaire = document.getElementById("contenaire");
 
   function handleDayClick() {
     if ( sky == 0){
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nightHomePage.style.display = "block";
       dayNav.src = "image/white-day.svg";
       dayMenue.src = "image/white-day.svg";
+      graph.src = "image/accueil/graphiqueNuitClassmentPersonnage.png";
       h1Titre.style.color = "#ffffff";
       h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
       h2Titre.style.color = "#ffffff";
@@ -46,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
       barreMenu.style.backgroundColor = "#000";
       h3.forEach(h3 => {
         h3.style.color = "#fff";
+      });
+      a.forEach(a => {
+        a.style.color = "#D2BB8E";
       });
       p.forEach(p => {
         p.style.color = "#fff";
@@ -72,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nightHomePage.style.display = "none";
     dayNav.src = "image/white-night.svg";
     dayMenue.src = "image/white-night.svg";
+    graph.src = "image/accueil/graphiqueJourClassmentPersonnage.png";
     h1Titre.style.color = "#212222";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#212222";
@@ -81,6 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     p.forEach(p => {
       p.style.color = "#212222";
+    });
+    a.forEach(a => {
+      a.style.color = "#3B8CD4";
     });
     separationHeader.src = "image/header-limitation-black.svg";
 
@@ -139,6 +150,7 @@ function openOut() {
     console.log(menuEtat)
     menue.style.display = "none";
     conteneurFlou.style.display = "block";
+    contenaire.style.marginRight = "calc(35% + 15px)";
 
   } else {
     document.body.style.overflow = 'visible'
@@ -146,6 +158,7 @@ function openOut() {
     barreMenu.style.transform = "translateX(100vw)";
     menue.style.display = "block";
     conteneurFlou.style.display = "none";
+    contenaire.style.marginRight = "35%";
     console.log(menuEtat)
   }
   
