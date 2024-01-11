@@ -8,6 +8,7 @@ const menue = document.getElementById("scroll-menue");
 const menueNav = document.getElementById("sanditch-nav");
 const dayMenue = document.getElementById("day-menue");
 const conteneurFlou = document.getElementById("conteneur-flou");
+const a = document.querySelectorAll("#a");
 const h2 = document.querySelectorAll(".h2");
 const h3 = document.querySelectorAll(".h3");
 const p = document.querySelectorAll(".p");
@@ -57,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
             p.forEach(p => {
                 p.style.color = "#fff";
             });
+            a.forEach(a => {
+                a.style.color = "#D2BB8E";
+              });
 
         } else {
 
@@ -96,6 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
             p.forEach(p => {
                 p.style.color = "#212222";
             });
+            a.forEach(a => {
+                a.style.color = "#3B8CD4";
+              });
         }
     };
 

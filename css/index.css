@@ -80,12 +80,28 @@
 }
 
 .contenaire {
-  margin-right: 30%;
-  margin-left: 5%;
+  margin-right: 35%;
+  margin-left: 10%;
 }
 
-.contenaire h2{
-margin-bottom: 50px;
+.contenaire h2 {
+  margin-bottom: 50px;
+}
+
+.contenaire h3 {
+  color: #212222;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contenaire img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.desGraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #menue-menue {
@@ -96,6 +112,26 @@ margin-bottom: 50px;
 
 #scroll-menue {
   padding: 40px 15px 30px 15px;
+}
+
+.contenaire-img img {
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+.contenaire-img  {
+  width: 80%;
+
+}
+
+#a{
+  color: #3B8CD4;
+}
+
+.centrage-img {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
