@@ -136,8 +136,8 @@
 
 @media screen and (max-width: 768px) {
   .contenaire {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 
   }
 
@@ -145,12 +145,25 @@
     display: none;
   }
 
+  #scroll-menue {
+    width: 40px;
+    top: 0;
+    margin-top: -5vh;
+
+    padding: 40px 15px 15px 15px;
+  }
+
   #sond-nav {
     display: none;
 
   }
 
+  .contenaire-img  {
+    width: 100%;
+  
+  }
   .home-page-title {
     align-items: start;
+    margin-left: 10px;
   }
 }
