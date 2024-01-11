@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const h1Titre = document.getElementById("h1-titre");
   const h2Titre = document.getElementById("h2-titre");
   const h2 = document.getElementById("h2");
+  const h3 = document.getElementById("h3");
   const p = document.querySelectorAll("p");
   const gradient = document.getElementById("gradient-overlay");
   const separationHeader = document.getElementById("separation-svg-header");

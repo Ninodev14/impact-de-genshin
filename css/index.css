@@ -80,12 +80,28 @@
 }
 
 .contenaire {
-  margin-right: 30%;
-  margin-left: 5%;
+  margin-right: 35%;
+  margin-left: 10%;
 }
 
-.contenaire h2{
-margin-bottom: 50px;
+.contenaire h2 {
+  margin-bottom: 50px;
+}
+
+.contenaire h3 {
+  color: black;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contenaire img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.desGraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #menue-menue {
