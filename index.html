@@ -17,12 +17,13 @@
         <audio id="backgroundMusic" loop>
             <source src="musique/main-music.mp3" type="audio/mp3">
         </audio>
-
-        <div class="home-page-title">
-            <h1 id="h1-titre" style="margin-top: -100px; color: rgb(0, 0, 0);"> L’impact de Genshin </h1>
-            <img id="separation-svg-header" class="separation-svg-header" src="image/header-limitation-black.svg"
-                alt="">
-            <h2 id="h2-titre" style="color: rgb(0, 0, 0);"> Descendre pour découvrir </h2>
+        <div id="scroll-appear-h1">
+            <div class="home-page-title">
+                <h1 id="h1-titre" style="margin-top: -100px; color: rgb(0, 0, 0);"> L’impact de Genshin </h1>
+                <img id="separation-svg-header" class="separation-svg-header" src="image/header-limitation-black.svg"
+                    alt="">
+                <h2 id="h2-titre" style="color: rgb(0, 0, 0);"> Descendre pour découvrir </h2>
+            </div>
         </div>
         <video autoplay muted loop id="nightHomePage" class="annim_home_page_night">
             <source src="animation/genshin-nuit.mp4" type="video/mp4">
@@ -154,34 +155,34 @@
             </div>
         </div>
         <div class="scroll-appear">
-        <p id="p">En nous basant sur ces résultats, nous avons compilé des listes de toutes les caractéristiques des
-            personnages : les caractéristiques physiques (genre, taille, couleur et longueur des cheveux, couleur
-            des
-            yeux, couleur de peau, particularités physiques), les spécialités liées au combat (élément, arme, rôle
-            dans
-            une équipe), mais aussi leur rôle dans l’histoire (pays, affiliation, importance dans l’histoire). Une
-            fois
-            associées entre elles, nous avons pu déterminer pour chaque caractéristique celle pour laquelle, en
-            moyenne,
-            les joueurs ont déboursé le plus d’argent.</p>
-        <p id="p" class="desGraph"> <a id="a" href="WheelMenu.html">Découvrez toutes nos données ici</a></p>
-    </div>
-    <div class="scroll-appear">
-        <h3 id="h3">Et nos personnages ?</h3>
-        <p id="p">Basés sur ces résultats, nous avons donc créé deux personnages : celui qui se vendrait le plus et
-            celui qui serait le moins désiré. Évidemment, ces données ne sont pas parfaites, vu que nous nous sommes
-            basés sur des moyennes de moyennes. Cependant, si l’on se fie à nos chiffres, <a id="a"
-                href="1charactere.html">voici Katorea</a>. Ce personnage devrait séduire la majorité des joueurs
-            prêts à
-            dépenser sans compter pour l’obtenir. En revanche, <a id="a" href="2charactere.html">Rainer</a> devrait
-            quant à lui
-            faire fuir tous les jours.</p>
-        <p id="p" class="desGraph"> <a id="a" href="1charactere.html">Découvrez en exclusivité nos personnages ici
-                !</a></p>
+            <p id="p">En nous basant sur ces résultats, nous avons compilé des listes de toutes les caractéristiques des
+                personnages : les caractéristiques physiques (genre, taille, couleur et longueur des cheveux, couleur
+                des
+                yeux, couleur de peau, particularités physiques), les spécialités liées au combat (élément, arme, rôle
+                dans
+                une équipe), mais aussi leur rôle dans l’histoire (pays, affiliation, importance dans l’histoire). Une
+                fois
+                associées entre elles, nous avons pu déterminer pour chaque caractéristique celle pour laquelle, en
+                moyenne,
+                les joueurs ont déboursé le plus d’argent.</p>
+            <p id="p" class="desGraph"> <a id="a" href="WheelMenu.html">Découvrez toutes nos données ici</a></p>
+        </div>
+        <div class="scroll-appear">
+            <h3 id="h3">Et nos personnages ?</h3>
+            <p id="p">Basés sur ces résultats, nous avons donc créé deux personnages : celui qui se vendrait le plus et
+                celui qui serait le moins désiré. Évidemment, ces données ne sont pas parfaites, vu que nous nous sommes
+                basés sur des moyennes de moyennes. Cependant, si l’on se fie à nos chiffres, <a id="a"
+                    href="1charactere.html">voici Katorea</a>. Ce personnage devrait séduire la majorité des joueurs
+                prêts à
+                dépenser sans compter pour l’obtenir. En revanche, <a id="a" href="2charactere.html">Rainer</a> devrait
+                quant à lui
+                faire fuir tous les jours.</p>
+            <p id="p" class="desGraph"> <a id="a" href="1charactere.html">Découvrez en exclusivité nos personnages ici
+                    !</a></p>
 
-        <p id="p">Site réalisé par Julie RONDOF, Elodie LAISNE, Maël LEDRIN, et Nino LEFORT.</p>
+            <p id="p">Site réalisé par Julie RONDOF, Elodie LAISNE, Maël LEDRIN, et Nino LEFORT.</p>
+        </div>
     </div>
-</div>
 
 
     <footer id="footer">
@@ -208,6 +209,7 @@
                 src="image/star-footer.svg" alt="">
     </footer>
     <script src="js/night_day.js"></script>
+    <script src="js/aparitionTitle.js"></script>
     <script src="js/aparition.js"></script>
 </body>
 
