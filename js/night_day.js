@@ -126,6 +126,7 @@ sondMenue.addEventListener("click", toggleMusic);
 function openOut() {
 
   if (menuEtat == 0) {
+    document.body.style.overflow = 'hidden';
     menuEtat = 1;
     barreMenu.style.transform = "translateX(0)";
     console.log(menuEtat)
@@ -133,6 +134,7 @@ function openOut() {
     conteneurFlou.style.display = "block";
 
   } else {
+    document.body.style.overflow = 'visible'
     menuEtat = 0;
     barreMenu.style.transform = "translateX(100vw)";
     menue.style.display = "block";

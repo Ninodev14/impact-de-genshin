@@ -21,6 +21,7 @@
 }
 
 #barre-menu {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -176,4 +177,11 @@ a:hover {
     margin-bottom: 2px;
   }
 
+}
+
+@media screen and (min-width: 768px) {
+
+  #barre-menu {
+    overflow-y:hidden;
+  }
 }
