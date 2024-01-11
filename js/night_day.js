@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const h1Titre = document.getElementById("h1-titre");
   const h2Titre = document.getElementById("h2-titre");
   const h2 = document.getElementById("h2");
-  const h3 = document.getElementById("h3");
+  const h3 = document.querySelectorAll("h3");
   const p = document.querySelectorAll("p");
   const gradient = document.getElementById("gradient-overlay");
   const separationHeader = document.getElementById("separation-svg-header");
@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
       h2.style.color = "#fff";
       menue.style.backgroundColor = "#000";
       barreMenu.style.backgroundColor = "#000";
+      h3.forEach(h3 => {
+        h3.style.color = "#fff";
+      });
       p.forEach(p => {
         p.style.color = "#fff";
       });
@@ -73,6 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#212222";
     h2.style.color = "#212222";
+    h3.forEach(h3 => {
+      h3.style.color = "#212222";
+    });
     p.forEach(p => {
       p.style.color = "#212222";
     });

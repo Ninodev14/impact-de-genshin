@@ -89,7 +89,7 @@
 }
 
 .contenaire h3 {
-  color: black;
+  color: #212222;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -112,6 +112,23 @@
 
 #scroll-menue {
   padding: 40px 15px 30px 15px;
+}
+
+.contenaire-img img {
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+.contenaire-img  {
+  width: 60%;
+
+}
+
+
+.centrage-img {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
