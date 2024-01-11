@@ -53,6 +53,9 @@
     color: wheat;
     margin: 0;
 }
+.textL {
+    color: #212222;
+}
 
 .information {
     display: flex;
@@ -261,7 +264,17 @@
   }
 }
 
+#informationBoxBack {
+    display: block;
+}
+
 @media (max-width: 960px) {
+    informationBoxBack{
+        display: none;
+    }
+    .mobi {
+        display: none;
+    }
     .wheel-box {
         display: none;
     }

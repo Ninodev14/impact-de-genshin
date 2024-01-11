@@ -21,9 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("footer");
     var images = document.querySelectorAll('.ico');
     var imageC = document.querySelectorAll('.center');
+    var elements = document.querySelectorAll('.textL');
   
     function handleDayClick() {
       if ( sky == 0){
+        elements.forEach(function(element) {
+          element.style.color = 'wheat'; // Change the color to your desired value
+        });
         images.forEach(function(image) {
             var currentSrc = image.src;
             if (currentSrc.endsWith('.png')) {
@@ -64,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else {
 
+            elements.forEach(function(element) {
+                element.style.color = '#212222'; // Change the color to your desired value
+              });
             images.forEach(function(image) {
                 var currentSrc = image.src;
                 if (currentSrc.endsWith('N.png')) {

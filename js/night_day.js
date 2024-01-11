@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       color = 0;
     }
   }else {
+    
     barreMenu.style.backgroundColor = "#212222";
     menue.style.backgroundColor = "#212222";
     gradient.style.background = "linear-gradient(0deg, #FFF 1.48%, rgba(255, 255, 255, 0.00) 22.74%)";
