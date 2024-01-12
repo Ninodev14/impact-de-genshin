@@ -64,7 +64,6 @@ body {
     width: 100%;
     height: 100%;
     transform: translate(-50px, -50px);
-    min-height: 756px;
 }
 .information-box {
     width: 80%;
