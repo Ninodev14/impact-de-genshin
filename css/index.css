@@ -22,7 +22,7 @@
   margin-bottom: 50px;
   height: 5%;
   display: flex;
-margin-left: 45%;
+margin-left: 48%;
 
 transition: transform 1s ease-in-out;
 }
@@ -214,5 +214,10 @@ transition: transform 1s ease-in-out;
     align-items: center;
   
   
+  }
+
+  #scroll-down {
+  margin-left: 50%;
+
   }
 }
