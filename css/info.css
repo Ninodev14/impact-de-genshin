@@ -1,3 +1,9 @@
+
+body {
+    background-size: contain;
+}
+
+
 .bodyflex {
     
   display: flex;
@@ -5,6 +11,21 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+
+.top , .bar p:not(.bottom) {
+    color: #212222 !important;
+    text-align: left !important;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.bottom {
+    color:#fff !important; 
+    text-align: left !important;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
 .center {
     width: 150px;
     height: 150px;
@@ -19,7 +40,7 @@
 }
 
 .BIGTITLE {
-    margin: 100px;
+    padding: 100px;
     text-shadow: none;
     color: #212222;
 }
@@ -197,16 +218,16 @@
   }
 .bar-graph p {
     font-weight: bold;
-    color: white;
     padding-right: 10px;
     width: 120px;
+    color: white;
     text-align: right;
     min-width: 120px;
 }
 
+
   .bar {
     height: 50px;
-    background-color: #3498db;
     border-left: 2px solid white;
     padding-top: 20px;
     transition: filter 0.3s ease;
@@ -215,11 +236,6 @@
     
     
 }
-
-.bar:hover {
-    filter: brightness(.5);
-}
-
 
   .tooltip {
     filter: none;
@@ -233,9 +249,6 @@
     transform: translate(-100%, -100%);
   }
 
-  .bar:hover .tooltip {
-    display: block;
-  }
 
   
 
