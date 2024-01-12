@@ -292,6 +292,9 @@
         min-width: 60px;
         word-wrap: break-word;
     }
+    .information-box-back {
+        display: none;
+    }
 }
 @media (min-width: 960px) {
     .bodyflex{
