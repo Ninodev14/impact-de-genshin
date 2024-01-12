@@ -7,9 +7,38 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/1charactere.css">
+    <link rel="stylesheet" href="css/headeronly.css">
     <link rel="icon" href="image/badge-icone.ico" type="image/png">
     <title>Impact de Genshin - Nos personnages</title>
 </head>
+
+<div id="conteneur-flou"></div>
+<div id="barre-menu">
+    <img id="close-nav" src="image/black-close.svg" alt="fermer">
+    <nav>
+        <div>
+            <a href="index.html">
+                <h2>Accueil</h2>
+            </a>
+            <a href="WheelMenu.html">
+                <h2>Nos données</h2>
+            </a>
+            <a href="1charactere.html">
+                <h2>Nos personnages</h2>
+            </a>
+        </div>
+        <div style="margin-top: 100px;">
+            <a href="mentions.html" style="margin-top: 100%;">
+                <h2>Mentions légales</h2>
+            </a>
+            <div id="menue-menue">
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="scroll-menue">
+    <img id="sanditch-nav" src="image/sandwitch.svg" alt="Menue">
+</div>
 
 <body>
     <div id="blocHaut">
@@ -19,8 +48,10 @@
                 <div class="equar"></div>
                 <div class="end"></div>
                 <img class="star" src="image/charactere/white-star.svg" alt="">
-                <a href="1charactere.html"><img src="image/charactere/tete1.png" alt="tete de Katorea"></a>
-                <a href="2charactere.html"><img src="image/charactere/tete2.png" alt="tete de Rainer"></a>
+                <a href="1charactere.html" class="head-contenaire1"><img src="image/charactere/Katorea_profile_2.png" alt="tete de Katorea"></a>
+                <a href="2charactere.html" class="head-contenaire2"><img src="image/charactere/Rainer_profile_2.png" alt="tete de Katorea"></a>
+                <a href="2charactere.html"><img src="image/charactere/tete2.png" alt="tete de Katorea"></a>
+                <a href="1charactere.html"><img src="image/charactere/tete1.png" alt="tete de Rainer"></a>
             </div>
         </div>
         <h1 class="responsive-h1">Dendro / Katorea</h1>
@@ -53,21 +84,19 @@
         </div>
         <div class="top-conteneur">
             <h1>Dendro / Katorea</h1>
-            <a href="index.html">
-                <h3>Retour à l’accueil</h3>
-            </a>
         </div>
+       
         <div class="nav-bas">
             <div class="white"></div>
+            <a href="1charactere.html" class="head-contenaire1-responcive"><img src="image/charactere/Katorea_profile_2.png" alt="tete de Katorea"></a>
+            <a href="2charactere.html" class="head-contenaire2-responcive"><img src="image/charactere/Rainer_profile_2.png" alt="tete de Katorea"></a>
             <img class="responice-eyes" src="image/charactere/eyesDendro.png" alt="oeuil divin de inazuma de Dendro">
-            <a href="1charactere.html"><img class="responcive-head" src="image/charactere/tete1.png" alt="tete de Katorea"></a>
-            <a href="2charactere.html"><img class="responcive-head" src="image/charactere/tete2.png" alt="tete de Rainer"></a>
-            <div class="align-droit">
-                <a href="index.html"><img class="responcive-head" src="image/charactere/white-home.svg" alt="Home"></a>
-            </div>
+            <a href="1charactere.html"><img class="responcive-head" src="image/charactere/tete2.png" alt="tete de Katorea"></a>
+            <a href="2charactere.html"><img class="responcive-head" src="image/charactere/tete1.png" alt="tete de Rainer"></a>
         </div>
 
     </div>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

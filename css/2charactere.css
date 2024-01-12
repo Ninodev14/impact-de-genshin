@@ -13,6 +13,19 @@ body {
     height: fit-content;
 }
 
+.head-contenaire1{
+    z-index: 3;
+    position: absolute;
+    margin-left: 40;
+    margin-top: 128px ;
+}
+
+.head-contenaire2{
+    z-index: 3;
+    position: absolute;
+    margin-left: 40;
+    margin-top: 210px ;
+}
 .contenaire-img {
     position: absolute;
     margin-top: 80px;
@@ -201,13 +214,6 @@ h2 {
         margin-left: 30px;
     }
 
-    .align-droit {
-        margin-right: 35px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
     .responsive-h1 {
         padding-top: 30px;
         margin-left: 5%
@@ -233,6 +239,18 @@ h2 {
         justify-content: center;
         margin-top: 30px;
         margin-bottom:0px;
+    }
+    .head-contenaire1-responcive{
+        z-index: 3;
+        position: absolute;
+        margin-left: 90px !important;
+        margin-bottom: 10px ;
+    }
+    .head-contenaire2-responcive{
+        z-index: 3;
+        position: absolute;
+        margin-left: 175px !important;
+        margin-bottom: 20px ;
     }
 }
 
