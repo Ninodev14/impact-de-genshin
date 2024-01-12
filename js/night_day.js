@@ -60,12 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
       separationHeader.src = "image/header-limitation-white.svg";
       sky = 1;
       if(etat == 1) {
-      sondNav.src = "image/white-mute.svg";
-      sondMenue.src = "image/white-mute.svg";
-      color = 0;
-    } else {
       sondNav.src = "image/white-on.svg";
       sondMenue.src = "image/white-on.svg";
+      color = 0;
+    } else {
+      sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
       color = 0;
     }
   }else {
@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sky = 0;
     if(etat == 1) {
-    sondNav.src = "image/white-mute.svg";
-    sondMenue.src = "image/white-mute.svg";
-    color = 1;
-  } else {
     sondNav.src = "image/white-on.svg";
     sondMenue.src = "image/white-on.svg";
+    color = 1;
+  } else {
+    sondNav.src = "image/white-mute.svg";
+    sondMenue.src = "image/white-mute.svg";
     color = 1;
   }
 }
@@ -121,20 +121,20 @@ function toggleMusic() {
 
   if (etat == 0) {
     if (color == 1) {
-      sondNav.src = "image/white-mute.svg";
-      sondMenue.src = "image/white-mute.svg";
+      sondNav.src = "image/white-on.svg";
+      sondMenue.src = "image/white-on.svg";
     } else {
-      sondNav.src = "image/white-mute.svg";
-      sondMenue.src = "image/white-mute.svg";
+      sondNav.src = "image/white-on.svg";
+      sondMenue.src = "image/white-on.svg";
     }
     etat = 1;
   } else {
     if (color == 1) {
-      sondNav.src = "image/white-on.svg";
-      sondMenue.src = "image/white-on.svg";
+      sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
     } else {
-      sondNav.src = "image/white-on.svg";
-      sondMenue.src = "image/white-on.svg";
+      sondNav.src = "image/white-mute.svg";
+      sondMenue.src = "image/white-mute.svg";
     }
     etat = 0;
   }
