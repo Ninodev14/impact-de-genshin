@@ -17,10 +17,12 @@ body {
     position: absolute;
     margin-top: 80px;
     margin-left: 55%;
+    bottom: 0;
 }
 
 .contenaire-img img {
-    height: 90vh;
+
+    height: 70vh;
     width: auto;
 }
 
@@ -179,7 +181,7 @@ h2 {
     body {
         background-image: url('/image/charactere/backgroundDendro.jpg');
         background-size: cover;
-        height: 100vh;
+        height: 200vh;
         margin: 0;
     }
 
@@ -223,11 +225,14 @@ h2 {
     }
 
     .contenaire-img {
+        position: relative;
         display: flex;
         align-items: center;
         margin-left: 0%;
         width: 100%;
-        justify-content: center
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 70px;
     }
 }
 
