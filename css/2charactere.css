@@ -58,6 +58,7 @@ h2 {
 }
 
 #blocPerso .eyes {
+    cursor: pointer;
     margin-left: -16px;
     width: 88px;
     height: 109px;
