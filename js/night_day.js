@@ -172,7 +172,7 @@ closeMenu.addEventListener("click", openOut);
 });
 
 
-const currentPosition = 0;
+let currentPosition = 0;
 
 function animateElement() {
   if (currentPosition === 0) {

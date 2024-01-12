@@ -1,8 +1,8 @@
 function handleScrollAppear() {
-    var elementsToAppear = document.querySelectorAll('.scroll-appear');
+    const elementsToAppear = document.querySelectorAll('.scroll-appear');
 
     elementsToAppear.forEach(function(element) {
-        var position = element.getBoundingClientRect();
+        const position = element.getBoundingClientRect();
 
         // Check if the element is in the viewport
         if (position.top <= window.innerHeight * 0.90) {
