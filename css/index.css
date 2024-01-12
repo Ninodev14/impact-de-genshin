@@ -3,10 +3,6 @@
   transform: translateY(60px); /* Move the elements down initially */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-#scroll-appear-h1{
-  opacity: 1;
-  transition: opacity 0.8s ease;
-}
 
 #sond-nav {
   cursor: pointer;
