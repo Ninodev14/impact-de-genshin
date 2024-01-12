@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const nightHomePage = document.getElementById("nightHomePage");
   const backgroundMusic = document.getElementById("backgroundMusic");
   const footer = document.getElementById("footer");
-  const graph = document.getElementById("graph");
 
   function handleDayClick() {
     if ( sky == 0){
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nightHomePage.style.display = "block";
       dayNav.src = "image/white-day.svg";
       dayMenue.src = "image/white-day.svg";
-      graph.src = "image/accueil/graphiqueNuitClassmentPersonnage.png";
       h1Titre.style.color = "#ffffff";
       h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
       h2Titre.style.color = "#ffffff";
@@ -79,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     nightHomePage.style.display = "none";
     dayNav.src = "image/white-night.svg";
     dayMenue.src = "image/white-night.svg";
-    graph.src = "image/accueil/graphiqueJourClassmentPersonnage.png";
     h1Titre.style.color = "#212222";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#212222";
