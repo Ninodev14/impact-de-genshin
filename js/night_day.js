@@ -11,7 +11,7 @@ const dayMenue = document.getElementById("day-menue");
 const sondMenue = document.getElementById("sond-menue");
 const conteneurFlou = document.getElementById("conteneur-flou");
 const scrollDown = document.getElementById("scroll-down");
-
+const scrollTopButton = document.getElementById('scroll-top');
 
 document.addEventListener("DOMContentLoaded", function () {
   
@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nightHomePage = document.getElementById("nightHomePage");
   const backgroundMusic = document.getElementById("backgroundMusic");
   const footer = document.getElementById("footer");
+  
 
   function handleDayClick() {
     if ( sky == 0){
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       h2.style.color = "#fff";
       menue.style.backgroundColor = "#000";
       barreMenu.style.backgroundColor = "#000";
+      scrollTopButton.src = "image/white-scroll.svg"
       h3.forEach(h3 => {
         h3.style.color = "#fff";
       });
@@ -84,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     h1Titre.style.color = "#212222";
     h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
     h2Titre.style.color = "#212222";
+    scrollTopButton.src = "image/black-scroll.svg"
     h2.style.color = "#212222";
     h3.forEach(h3 => {
       h3.style.color = "#212222";
@@ -169,7 +172,7 @@ closeMenu.addEventListener("click", openOut);
 });
 
 
-var currentPosition = 0;
+const currentPosition = 0;
 
 function animateElement() {
   if (currentPosition === 0) {
@@ -182,3 +185,17 @@ function animateElement() {
 }
 
 setInterval(animateElement, 1000);
+
+
+
+window.addEventListener('scroll', function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopButton.classList.add('active');
+  } else {
+    scrollTopButton.classList.remove('active');
+  }
+});
+
+scrollTopButton.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

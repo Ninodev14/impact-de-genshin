@@ -1,3 +1,19 @@
+#scroll-top {
+  z-index: 999;
+  width: 70px;
+ height: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+#scroll-top.active {
+  opacity: 1;
+}
+
 .scroll-appear {
   opacity: 0;
   transform: translateY(60px); /* Move the elements down initially */
@@ -34,14 +50,14 @@ transition: transform 1s ease-in-out;
   cursor: pointer;
 }
 
-.gradient-overlay {
+#gradient-overlay {
   z-index: 10;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #FFF 1.48%, rgba(255, 255, 255, 0.00) 22.74%);
+  background: linear-gradient(0deg,  #FFF 1.48%, rgba(255, 255, 255, 0) 22.74%);
 }
 
 .home-page-title {
