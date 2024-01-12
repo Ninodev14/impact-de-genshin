@@ -13,17 +13,16 @@
   height: auto;
   width: 30vw;
 }
-
+.conteur-scroll{
+  display: flex;
+  justify-content: space-around;
+}
 #scroll-down {
   z-index: 999;
   position: absolute;
   bottom: 0;
-
   margin-bottom: 50px;
   width: 60px;
-  display: flex;
-margin-left: calc(50% + -60px) ;
-
 transition: transform 1s ease-in-out;
 }
 
@@ -216,4 +215,5 @@ transition: transform 1s ease-in-out;
   
   }
 
+  
 }
