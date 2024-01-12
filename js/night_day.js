@@ -10,6 +10,8 @@ const menueNav = document.getElementById("sanditch-nav");
 const dayMenue = document.getElementById("day-menue");
 const sondMenue = document.getElementById("sond-menue");
 const conteneurFlou = document.getElementById("conteneur-flou");
+const scrollDown = document.getElementById("scroll-down");
+
 
 document.addEventListener("DOMContentLoaded", function () {
   
@@ -38,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dayHomePage.style.display = "none";
       nightHomePage.style.display = "block";
       dayNav.src = "image/white-day.svg";
+      scrollDown.src = "image/scroll-black.svg";
       dayMenue.src = "image/white-day.svg";
       h1Titre.style.color = "#ffffff";
       h1Titre.style.textShadow = "0px 0px 8px rgba(0, 0, 0, 0.35)";
@@ -73,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     footer.style.backgroundColor = "#212222"
     body.style.backgroundColor = "#fff"
     body.classList.add("night-mode");
+    scrollDown.src = "image/scroll-white.svg";
     dayHomePage.style.display = "block";
     nightHomePage.style.display = "none";
     dayNav.src = "image/white-night.svg";
@@ -163,3 +167,18 @@ conteneurFlou.addEventListener("click", openOut);
 menueNav.addEventListener("click", openOut);
 closeMenu.addEventListener("click", openOut);
 });
+
+
+var currentPosition = 0;
+
+function animateElement() {
+  if (currentPosition === 0) {
+    scrollDown.style.transform = 'translateY(-20px)';
+    currentPosition = 1;
+  } else {
+    scrollDown.style.transform = 'translateY(0)';
+    currentPosition = 0;
+  }
+}
+
+setInterval(animateElement, 1000);
