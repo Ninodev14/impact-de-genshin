@@ -303,6 +303,7 @@ body {
     }
     .information-box {
         display: block;
+        height: 756px;
     }
     .exit {
         display: none;
@@ -319,6 +320,7 @@ body {
     .textTitle {
         display: none;
     }
+
 }
 @media (min-width: 960px) {
     .bodyflex{
