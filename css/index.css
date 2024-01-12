@@ -186,11 +186,9 @@ transition: transform 1s ease-in-out;
   #scroll-menue {
     width: 40px;
     top: 0;
-    margin-top: -5vh;
-
-    padding: 40px 15px 15px 15px;
+    margin-top: -7%;
+    padding: 45px 15px 15px 15px;
   }
-
   #sond-nav {
     display: none;
 
