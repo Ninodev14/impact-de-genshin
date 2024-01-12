@@ -58,4 +58,3 @@ function adjustWidths() {
 
 // Call the function on page load and resize
 window.addEventListener('load', adjustWidths);
-window.addEventListener('resize', adjustWidths);
