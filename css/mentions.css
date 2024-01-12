@@ -37,8 +37,8 @@
 }
 
 .copy {
-    margin-top: 128px;
-    margin-bottom: -128px;
+    margin-top: 4%;
+    margin-bottom: -4%;
     width: 100%;
     display: flex;
     justify-content: flex-end
