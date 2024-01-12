@@ -66,7 +66,9 @@ transition: transform 1s ease-in-out;
   position: absolute;
 }
 
-
+.annim_home_page_night{
+  display: none;
+}
 .annim_home_page_day {
   z-index: 0;
   align-self: center;
