@@ -1,0 +1,168 @@
+#conteneur-flou {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    /* Ajustez le niveau de flou selon vos préférences */
+  
+    display: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    padding-left: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  
+  #close-nav {
+    cursor: pointer;
+    position: fixed;
+    width: 35px;
+    height: auto;
+    top: 30px;
+    right: 50px;
+  }
+  
+  #barre-menu {
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    right: 0;
+    height: 100%;
+    width: 35vw;
+    background-color: #212222;
+    transition: transform 0.3s ease;
+    transform: translateX(40vw);
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+  
+  #scroll-menue {
+    width: 40px;
+    height: auto;
+    z-index: 1000;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    padding: 30px 15px 25px 15px;
+    background-color: #212222;
+    border-radius: 37.5px 0 0 37.5px;
+  
+  }
+  
+  #sanditch-nav {
+    width: 40px;
+    height: auto;
+    z-index: 999;
+    cursor: pointer;
+
+  }
+
+  
+  .theme-toggle img {
+    width: 40px;
+    height: auto;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  #barre-menu a h2 {
+  
+    color: #FFF !important;
+  }
+  
+  #barre-menu a {
+    display: inline;
+    text-decoration: none;
+    text-decoration-color: white;
+    text-align: end;
+  }
+  
+  #barre-menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  
+  nav {
+    margin-top: 125px;
+    margin-right: 50px;
+  }
+  
+  nav h2 {
+    margin-bottom: 60px;
+  
+  }
+  
+  #menue-menue {
+    margin-left: 83%;
+    margin-top: 60px;
+  }
+  
+  #menue-menue img {
+    height: auto;
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+  
+    #barre-menu {
+      transform: translateX(100vw);
+      width: 100vw;
+    }
+
+  
+    #scroll-menue {
+      width: 40px;
+      top: 0;
+      margin-top: -5vh;
+  
+      padding: 40px 15px 15px 15px;
+    }
+  
+    #sanditch-nav {
+      margin-left: 2px;
+      margin-bottom: 2px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+    #barre-menu {
+      overflow-y:hidden;
+    }
+  }
