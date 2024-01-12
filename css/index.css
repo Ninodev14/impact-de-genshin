@@ -140,11 +140,16 @@
   align-items: center;
 }
 
+
 @media screen and (max-width: 768px) {
   .contenaire {
     margin-right: 10px;
     margin-left: 10px;
 
+  }
+
+  .h2-titre{
+    font-size: 30px;
   }
 
   .separation-svg-header {
