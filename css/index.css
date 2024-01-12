@@ -14,7 +14,18 @@
   width: 30vw;
 }
 
+#scroll-down {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
 
+  margin-bottom: 50px;
+  height: 5%;
+  display: flex;
+margin-left: 48.5%;
+
+transition: transform 1s ease-in-out;
+}
 
 .theme-toggle,
 .sond-toggle img {

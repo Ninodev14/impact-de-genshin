@@ -47,6 +47,15 @@ h3 {
     line-height: normal;
 }
 
+h4 {
+    color: #fff;
+    font-family: Philosopher;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 
 p {
     color: #212222;

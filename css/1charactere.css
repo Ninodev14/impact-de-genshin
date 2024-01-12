@@ -195,7 +195,7 @@ h2 {
     body {
         background-image: url('/image/charactere/backgroundDendro.jpg');
         background-size: cover;
-        height: 200vh;
+        height: 100%;
         margin: 0;
     }
 
@@ -240,7 +240,7 @@ h2 {
         width: 100%;
         justify-content: center;
         margin-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
     }
     .head-contenaire1-responcive{
         z-index: 3;
