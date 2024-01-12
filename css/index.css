@@ -148,7 +148,8 @@
 
   }
 
-  .h2-titre{
+  #h2-titre{
+    margin-top: 20px;
     font-size: 30px;
   }
 
