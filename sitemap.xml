@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Page d'accueil -->
     <url>
-        <loc>https://votredomaine.com/index.html</loc>
+        <loc>https://impact-genshin.netlify.app/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
     <!-- Page Nos données -->
     <url>
-        <loc>https://votredomaine.com/WheelMenu.html</loc>
+        <loc>https://impact-genshin.netlify.app/WheelMenu.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Page Nos personnages -->
     <url>
-        <loc>https://votredomaine.com/1charactere.html</loc>
+        <loc>https://impact-genshin.netlify.app/1charactere.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Page Mentions légales -->
     <url>
-        <loc>https://votredomaine.com/mentions.html</loc>
+        <loc>https://impact-genshin.netlify.app/mentions.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <!-- Page 1charactere -->
     <url>
-        <loc>https://votredomaine.com/1charactere.html</loc>
+        <loc>https://impact-genshin.netlify.app/1charactere.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- Page 2charactere -->
     <url>
-        <loc>https://votredomaine.com/2charactere.html</loc>
+        <loc>https://impact-genshin.netlify.app/2charactere.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
