@@ -262,7 +262,6 @@
 
   .contenaire-img {
     width: 100%;
-
   }
 
   .home-page-title {
@@ -271,14 +270,13 @@
   }
 
   .button {
-
-
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-
-
   }
 
+  .data-button {
+margin-bottom: 50px;
+  }
 
 }
