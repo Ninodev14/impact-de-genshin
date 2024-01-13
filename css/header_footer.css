@@ -80,6 +80,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
   
   .trait1{
