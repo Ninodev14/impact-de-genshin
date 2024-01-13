@@ -190,7 +190,7 @@
   width: 250px;
   height: 75px;
   border-radius: 43.5px;
-  border: 2px solid #CFBD93;
+  border: 2px solid #B0906A;
   background: #CFBD93;
   display: flex;
   transition: 0.3s;
@@ -229,6 +229,53 @@
 
 .charactere-button:hover {
   border: 2px solid #B0906A;
+  background: linear-gradient(180deg, #2a2b42 0%, #464d73 57.4%);
+}
+
+.data-button-v2 {
+  width: 301px;
+  height: 66px;
+  border-radius: 43.5px;
+  border: 2px solid #B0906A;
+  background: #CFBD93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data-button-v2 h3 {
+  color: #212222;
+}
+
+.data-button-v2 a {
+  text-decoration: none;
+}
+
+.data-button-v2:hover {
+  border: 2px solid #c9a67b;
+  background: #e1cea0;
+}
+
+.charactere-button-v2 {
+  width: 331px;
+  height: 66px;
+  border-radius: 43.5px;
+  border: 2px solid #B0906A;
+  background: linear-gradient(180deg, #222335 0%, #3C4263 57.4%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.charactere-button-v2 h3 {
+  color: #ffffff;
+}
+
+.charactere-button-v2 a {
+  text-decoration: none;
+}
+
+.charactere-button-v2:hover {
+  border: 2px solid #c9a67b;
   background: linear-gradient(180deg, #2a2b42 0%, #464d73 57.4%);
 }
 
@@ -276,7 +323,7 @@
   }
 
   .data-button {
-margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
 }
